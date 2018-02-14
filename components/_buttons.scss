@@ -1,0 +1,6 @@
+.btn-default{color:#333;border-color:#ccc;background-color:#fff;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(#e0e0e0));background-image:linear-gradient(to bottom, #fff 0, #e0e0e0 100%);background-repeat:repeat-x}
+
+.btn{
+	&-xsm{border: none; border-radius: 2px; display: inline-block; height: 20px; line-height: 20px; padding-left: 6px; padding-top:0px; padding-right: 6px; font-size: 8px; text-transform: uppercase; vertical-align: middle; -webkit-tap-highlight-color: transparent;}
+	&-xlg{border: none; border-radius: 8px; display: inline-block; height: 66px; line-height: 66px; padding-left: 22px; padding-right: 22px; font-size: 22px; text-transform: uppercase; vertical-align: middle; -webkit-tap-highlight-color: transparent;}
+}
