@@ -23,6 +23,36 @@ $colors: (
 	"black": $black,
 ) !default;
 
+$allcolors: (
+	"amber": $amber,
+	"black-cream": $black-cream,
+	"blue": $blue,
+	"blue-grey": $blue-grey,
+	"cisco-blue": $cisco-blue,
+	"cream": $cream,
+	"cyan": $cyan,
+	"dark-grey": $dark-grey,
+	"deep-purple": $deep-purple,
+	"green": $green,
+	"indigo": $indigo,
+	"light-blue": $light-blue,
+	"light-green": $light-green,
+	"light-pink": $light-pink,
+	"light-grey": $light-grey,
+	"orange": $orange,
+	"pale-green": $pale-green,
+	"pink": $pink,
+	"purple": $purple,
+	"red": $red,
+	"white": $white,
+	"black": $black,
+	"warning": $warning,
+	"danger": $danger,
+	"success": $success,
+	"info": $info,
+	"primary": $primary,
+) !default;
+
 
 @each $color_name, $color in $colors {
 	.text-#{$color_name}{color:$color !important;}
