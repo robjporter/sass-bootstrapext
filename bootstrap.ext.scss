@@ -12,6 +12,7 @@
 // 2. Vendors
 @import
   'vendor/normalize';
+  //'vendor/waves';
 
 // 3. Base stuff
 @import
@@ -32,7 +33,16 @@
 	"components/sizes",
 	"components/ribbons",
 	"components/fonts",
-	"components/buttons";
+	"components/hover",
+	"components/buttons",
+	"components/scale",
+	"components/helpers",
+	"components/examples",
+	"components/gradients",
+	"components/shadows",
+	"components/round",
+	"components/icons",
+	"components/shades";
 	
 // 6. Page-specific styles
 @import

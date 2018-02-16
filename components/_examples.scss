@@ -1,0 +1,5 @@
+.example{position:relative;margin:15px 0;padding:30px 19px 14px;*padding-top:24px;background-color:#fff;border:1px solid #ddd;&:after{content:"Example";position:absolute;top:-1px;left:-1px;padding:3px 7px;font-size:12px;font-weight:bold;background-color:#f5f5f5;border:1px solid #ddd;color:#9da0a4}}
+.prettyprint{padding:10px;background-color:#eeeeee;border:1px solid #dddddd}
+pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:20px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#333333;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;text-shadow:#ffffff 0 1px 0}
+code{color:#333333;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;text-shadow:#ffffff 0 1px 0}
+.example + .prettyprint{margin-top:-20px;padding-top:15px}

@@ -4,3 +4,25 @@
 	&-xsm{border: none; border-radius: 2px; display: inline-block; height: 20px; line-height: 20px; padding-left: 6px; padding-top:0px; padding-right: 6px; font-size: 8px; text-transform: uppercase; vertical-align: middle; -webkit-tap-highlight-color: transparent;}
 	&-xlg{border: none; border-radius: 8px; display: inline-block; height: 66px; line-height: 66px; padding-left: 22px; padding-right: 22px; font-size: 22px; text-transform: uppercase; vertical-align: middle; -webkit-tap-highlight-color: transparent;}
 }
+
+@for $i from 1 through 8 {
+	.btn.active-darken-#{$i}:active{filter:brightness(#{1-($i*5/100)});}
+	.btn.active-lighten-#{$i}:active{filter:brightness(unquote(#{100+$i*5})+"%");}
+}
+
+@each $color_name, $color in $colors {
+	.btn.btn-outline-{
+		&#{$color_name}{background-color: white; color:#{$color}; border: 1px solid #{$color};}
+		&#{$color_name}:hover{background-color: #{$color}; color:white; border: 1px solid #{$color};}
+		&#{$color_name}>.badge{color:white;}
+		&#{$color_name}:hover>.badge{color: #{$color}; background-color:white !important;}
+	}
+}
+
+.btn-labeled{
+	padding-top:0px;padding-bottom:10px;padding-top:-10px;
+	&>.btn-content{padding-top:2px;}
+	&>.btn-label{position:relative;background:0 0;background:rgba(0,0,0,.15);display:inline-block;padding-left:10px;padding-top:0px;padding-bottom:0px;padding-right:10px;left:-30px;height:37px;border-radius:3px 0 0 3px}
+}
+
+.btn-label.btn-label-right{left:auto;right:-30px;border-radius:0 3px 3px 0}

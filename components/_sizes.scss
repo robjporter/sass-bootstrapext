@@ -11,3 +11,27 @@ $size:100;
 	.h#{$size}{height:#{$size}px !important;}
 	$size: $size + 100
 }
+
+@for $i from 1 through 5 {
+	.mt--#{$i}{margin-top: -#{$i*0.25}rem !important;}
+	.mb--#{$i}{margin-bottom: -#{$i*0.25}rem !important;}
+	.ml--#{$i}{margin-left: -#{$i*0.25}rem !important;}
+	.mr--#{$i}{margin-right: -#{$i*0.25}rem !important;}
+	.pt--#{$i}{padding-top: -#{$i*0.25}rem !important;}
+	.pb--#{$i}{padding-bottom: -#{$i*0.25}rem !important;}
+	.pl--#{$i}{padding-left: -#{$i*0.25}rem !important;}
+	.pr--#{$i}{padding-right: -#{$i*0.25}rem !important;}
+}
+@for $i from 13 through 20 {
+	.mt-#{$i/4}{margin-top: #{$i*0.25}rem !important;}
+	.mb-#{$i/4}{margin-bottom: #{$i*0.25}rem !important;}
+	.ml-#{$i/4}{margin-left: #{$i*0.25}rem !important;}
+	.mr-#{$i/4}{margin-right: #{$i*0.25}rem !important;}
+	.pt-#{$i/4}{padding-top: #{$i*0.25}rem !important;}
+	.pb-#{$i/4}{padding-bottom: #{$i*0.25}rem !important;}
+	.pl-#{$i/4}{padding-left: #{$i*0.25}rem !important;}
+	.pr-#{$i/4}{padding-right: #{$i*0.25}rem !important;}
+}
+
+.mt-2-5{margin-top:.75rem;}
+.pt-2-5{padding-top:.75rem;}

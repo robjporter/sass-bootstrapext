@@ -3,3 +3,6 @@ $size:8;
 	.font-#{$size}{font-size:#{$size}px !important;}
   	$size: $size + 2
 }
+@for $i from 1 through 8 {
+	.font-w-#{$i*100}{font-weight:#{$i*100};}
+}

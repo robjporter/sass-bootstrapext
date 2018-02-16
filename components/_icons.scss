@@ -1,0 +1,5 @@
+$size:8;
+@while $size < 100 {
+	.material-icons.md-#{$size}{font-size:#{$size}px !important;}
+  	$size: $size + 2
+}

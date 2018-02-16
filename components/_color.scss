@@ -8,6 +8,7 @@ $colors: (
 	"cyan": $cyan,
 	"dark-grey": $dark-grey,
 	"deep-purple": $deep-purple,
+	"med-grey": $med-grey,
 	"green": $green,
 	"indigo": $indigo,
 	"light-blue": $light-blue,
@@ -21,6 +22,7 @@ $colors: (
 	"red": $red,
 	"white": $white,
 	"black": $black,
+	"deep-orange": $deep-orange,
 ) !default;
 
 $allcolors: (
@@ -35,6 +37,7 @@ $allcolors: (
 	"deep-purple": $deep-purple,
 	"green": $green,
 	"indigo": $indigo,
+	"deep-orange": $deep-orange,
 	"light-blue": $light-blue,
 	"light-green": $light-green,
 	"light-pink": $light-pink,
@@ -51,11 +54,24 @@ $allcolors: (
 	"success": $success,
 	"info": $info,
 	"primary": $primary,
+	"secondary": $secondary,
 ) !default;
 
 
 @each $color_name, $color in $colors {
 	.text-#{$color_name}{color:$color !important;}
-	.bd-callout-#{$color_name}{border-left-color:$color !important;}
-	.bg-#{$color_name}{background-color:$color !important;}
+	.bg-#{$color_name}{background-color:$color !important;}	
+	@if($color_name != "white") {
+		.bg-#{$color_name}:hover{background-color:$color !important;}
+	}
+	.hover\:bg-#{$color_name}{background-color:$color !important;}
+	.hover\:bg-#{$color_name}:hover{background-color:$color !important;}
+	.hr-#{$color_name}{display:block;width:100%;height:1px;background:rgba($color, 0.8) transparent;background:rgba(rgba($color, 0.8), 0.8);}
+	.hover\:text-#{$color_name}:hover{color:$color !important;}
+}
+
+@each $color_name, $color in $allcolors {
+	@for $i from 1 through 9 {
+		.bg-#{$color_name}-accent-#{$i}{background-color:rgba($color,to-number(#{1-($i/10)}));}
+	}
 }

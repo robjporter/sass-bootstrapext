@@ -1,0 +1,21 @@
+@each $color_name, $color in $allcolors {
+	@for $i from 1 through 5 {
+		.stripe-#{$color_name}-left-#{$i}{border-left: solid #{$i}px $color;}
+		.stripe-#{$color_name}-right-#{$i}{border-right: solid #{$i}px $color;}
+		.stripe-#{$color_name}-top-#{$i}{border-top: solid #{$i}px $color;}
+		.stripe-#{$color_name}-bottom-#{$i}{border-bottom: solid #{$i}px $color;}
+	}
+}
+
+@for $i from 1 through 20 {
+	.min-width-#{$i*10}{min-width:#{$i*10}px;}
+	.min-height-#{$i*10}{min-height:#{$i*10}px;}
+}
+
+.container {
+  max-width: 960px;
+}
+
+@for $i from 1 through 4 {
+	.container-#{50+$i*10}{width:unquote(#{50+$i*10})+"%";  display: block;margin-left: auto;margin-right: auto;}
+}
