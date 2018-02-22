@@ -28,21 +28,33 @@
 
 // 5. Components
 @import
-	"components/color",
-	"components/cards",
-	"components/sizes",
-	"components/ribbons",
-	"components/fonts",
-	"components/hover",
+	"components/borders",
 	"components/buttons",
-	"components/scale",
-	"components/helpers",
+	"components/cards",
+	"components/charts",
+	"components/chips",
+	"components/color",
+	"components/display",
+	"components/effects",
 	"components/examples",
+	"components/fonts",
+	"components/footers",
+	"components/forms",
 	"components/gradients",
-	"components/shadows",
-	"components/round",
+	"components/graphs",
+	"components/helpers",
+	"components/hover",
 	"components/icons",
-	"components/shades";
+	"components/images",
+	"components/modals",
+	"components/navigation",
+	"components/ribbons",
+	"components/round",
+	"components/scale",
+	"components/shades",
+	"components/shadows",
+	"components/sizes",
+	"components/video";
 	
 // 6. Page-specific styles
 @import

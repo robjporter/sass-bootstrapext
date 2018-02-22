@@ -6,3 +6,9 @@ $size:8;
 @for $i from 1 through 8 {
 	.font-w-#{$i*100}{font-weight:#{$i*100};}
 }
+
+.text-shadow{text-shadow:0 0 25px rgba(0,0,0,.25),1px 1px 1px rgba(0,0,0,.5)}
+
+.font-underline{text-decoration:underline;}
+.font-strike-through{text-decoration:line-through;}
+.font-overline{text-decoration:overline;}

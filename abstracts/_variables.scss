@@ -1,4 +1,5 @@
 $amber:#FDC02F;
+$black:black;
 $black-cream:#F7F7F7;
 $blue:#25B7CA;
 $blue-grey:#617D8A;
@@ -6,28 +7,95 @@ $cisco-blue:#085071;
 $cream:#F5F5F5;
 $cyan:#1FBCD3;
 $dark-grey:#857E7E;
+$deep-blue: #2196F3;
+$deep-orange:#ff5722;
 $deep-purple:#663FB4;
 $green:#50AE54;
 $grey:#BBBBBB;
-$med-grey: #9E9E9E;
 $indigo:#4054B2;
-$deep-orange:#ff5722;
+$med-grey: #9E9E9E;
+$navy-blue: #1A78C3;
 $light-blue:#1EAAF1;
 $light-green:#8CC252;
+$light-grey:#fafafa;
 $light-pink:#FEC1C2;
+$light-purple: #E1BEE7;
 $orange:#FD9727;
 $pale-green:#F5FFFD;
 $pink:#E72564;
 $purple:#9A30AE;
-$red:#F44336;
+$red:#ff4b4b;
 $white:white;
+
+$danger:red;
 $warning:$amber;
-$danger:$red;
 $success:$green;
 $info:#00c0ef;
+
 $primary:#3c8dbc;
-$black:black;
-$light-grey:#fafafa;
+$secondary: #383D41;
+
 $brand-color:$cisco-blue;
 $text-color:$brand-color;
-$secondary: #383D41;
+
+$colors: (
+	"amber": $amber,
+	"black-cream": $black-cream,
+	"blue": $blue,
+	"blue-grey": $blue-grey,
+	"cisco-blue": $cisco-blue,
+	"cream": $cream,
+	"cyan": $cyan,
+	"dark-grey": $dark-grey,
+	"deep-purple": $deep-purple,
+	"med-grey": $med-grey,
+	"green": $green,
+	"indigo": $indigo,
+	"light-blue": $light-blue,
+	"light-green": $light-green,
+	"light-pink": $light-pink,
+	"light-grey": $light-grey,
+	"light-purple": $light-purple,
+	"orange": $orange,
+	"pale-green": $pale-green,
+	"pink": $pink,
+	"purple": $purple,
+	"red": $red,
+	"white": $white,
+	"black": $black,
+	"deep-orange": $deep-orange,
+) !default;
+
+$allcolors: (
+	"amber": $amber,
+	"black-cream": $black-cream,
+	"blue": $blue,
+	"blue-grey": $blue-grey,
+	"cisco-blue": $cisco-blue,
+	"cream": $cream,
+	"cyan": $cyan,
+	"dark-grey": $dark-grey,
+	"deep-orange": $deep-orange,
+	"deep-purple": $deep-purple,
+	"green": $green,
+	"indigo": $indigo,
+	"light-blue": $light-blue,
+	"light-green": $light-green,
+	"light-grey": $light-grey,
+	"light-pink": $light-pink,
+	"light-purple": $light-purple,
+	"med-grey": $med-grey,
+	"orange": $orange,
+	"pale-green": $pale-green,
+	"pink": $pink,
+	"purple": $purple,
+	"red": $red,
+	"white": $white,
+	"black": $black,
+	"warning": $warning,
+	"danger": $danger,
+	"success": $success,
+	"info": $info,
+	"primary": $primary,
+	"secondary": $secondary,
+) !default;
